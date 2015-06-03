@@ -1,0 +1,16 @@
+﻿@charset "utf-8";
+
+@import "const";
+@import "templates";
+
+/*Layout*/
+@import "layout/normalize";
+@import "layout/layout";
+@import "layout/showcase";
+@import "layout/slider";
+@import "layout/main-photos";
+@import "layout/prize";
+@import "layout/start";
+
+
+@import "layout/copyright";

@@ -1,0 +1,26 @@
+﻿.main-photos {
+    padding: 0 $side_padding;
+
+    &_list {
+        padding: 0;
+        text-align: center;
+    }
+    &_item {
+        list-style: none;
+        display: inline-block;
+        margin: 0 2%;
+        width: 370px;
+        text-align: center;
+        position: relative;
+    }
+    &_flag {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -180px 0 0 -220px; 
+        z-index: -1;
+    }
+    &_model {
+        font: lighter italic 18px $default_font-family; 
+    }
+}

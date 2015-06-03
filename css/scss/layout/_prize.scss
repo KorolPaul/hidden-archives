@@ -1,0 +1,33 @@
+﻿.prize {
+    padding: 0 $side_padding;
+    position: relative;
+
+    &_main {
+        font: 48px $headings_font-family;
+        text-transform: uppercase;
+    }
+    &_model {
+        color: $gold_color;
+        display: block;
+    }
+
+    &_image {
+        position: absolute;
+        top: -50px;
+        right: -20px;
+        z-index: -1;
+    }
+    &_item {
+        float: left;
+        padding: 0 10% 0 0;
+        width: 40%;
+    }
+    &_title {
+        font: 28px $headings_font-family;
+        text-transform: uppercase;
+    }
+    &_description {
+        font: lighter italic $default_font-size $default_font-family; 
+        opacity: .5;
+    }
+}
