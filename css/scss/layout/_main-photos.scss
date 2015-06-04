@@ -1,5 +1,7 @@
 ﻿.main-photos {
     padding: 0 $side_padding;
+    position: relative;
+    z-index: 1;
 
     &_list {
         padding: 0;

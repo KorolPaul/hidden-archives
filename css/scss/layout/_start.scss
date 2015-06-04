@@ -1,5 +1,7 @@
 ﻿.start {
+    position: relative;
     text-align: center;
+    z-index: 1;
 
     &_message {
         font: lighter italic $default_font-size $default_font-family;

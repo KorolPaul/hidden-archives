@@ -1,0 +1,17 @@
+﻿.button {
+    color: $gold_color;
+    border: 1px solid $gold_color;
+    display: inline-block;
+    font: 16px $headings_font-family;
+    margin: 45px 0;
+    padding: 15px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease all;
+
+    &:hover, 
+    &:active {
+        background: $gold_color;
+        color: #fff;
+    }
+}

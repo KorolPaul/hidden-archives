@@ -28,14 +28,6 @@ body {
     font: $default_font-size $default_font-family;
     min-width: 1024px;
 }
-.heading-1 {
-    font: 48px $headings_font-family;
-    text-transform: uppercase;
-}
-.heading-3 {
-    font: 20px $headings_font-family;
-    text-transform: uppercase;
-}
 .gold {
     color: $gold_color;
 }
@@ -45,18 +37,4 @@ body {
     font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
-}
-.button {
-    color: $gold_color;
-    border: 1px solid $gold_color;
-    display: inline-block;
-    font: 16px $headings_font-family;
-    margin: 45px 0;
-    padding: 15px 50px;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &__center {
-        margin: auto;
-    }
 }
