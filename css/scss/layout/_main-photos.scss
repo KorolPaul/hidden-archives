@@ -1,28 +1,41 @@
 ﻿.main-photos {
     padding: 0 $side_padding;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 
+    &_title {
+        color: $heading_color;
+        font: 20px/54px $headings_font-family;
+        margin: 0 0 30px;
+        text-transform: uppercase;
+    }
     &_list {
+        margin: 0 -2% 0 0;
         padding: 0;
-        text-align: center;
     }
     &_item {
         list-style: none;
-        display: inline-block;
-        margin: 0 2%;
-        width: 370px;
-        text-align: center;
+        float: left;
+        margin: 0 2% 0 0;
+        width: 31.3%;
         position: relative;
+        text-align: center;
     }
     &_flag {
         position: absolute;
         left: 50%;
         top: 50%;
-        margin: -180px 0 0 -220px; 
+        margin: -180px 0 0 -328px; 
         z-index: -1;
     }
+    &_image {
+        margin: 0 0 15px;
+        width: 100%;
+    }
     &_model {
+        color: #fff;
         font: lighter italic 18px $default_font-family; 
+        display: block;
+        padding: 0 0 0 35px;
     }
 }

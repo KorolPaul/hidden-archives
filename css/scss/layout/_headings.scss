@@ -1,16 +1,20 @@
 ﻿.heading-1 {
+    color: $heading_color;
     font: 48px/58px $headings_font-family;
     text-transform: uppercase;
 }
 .heading-2 {
+    color: $heading_color;
     font: 32px $headings_font-family;
     text-transform: uppercase;
 }
 .heading-3 {
+    color: $heading_color;
     font: 17px $headings_font-family;
     text-transform: uppercase;
 }
 .heading-3 {
+    color: $heading_color;
     font: italic 18px/28px $default_font-family;
     text-transform: uppercase;
 }

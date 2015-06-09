@@ -3,8 +3,19 @@
     background-size: 100% auto;
     padding: 10px $side_padding 200px;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 
+    &:after {
+        background: url(../img/flag.png) no-repeat;
+        background-size: 100% auto;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 75%;
+        height: 1500px;
+        z-index: -1;
+    }
     &_description {
         color: #fff;
         width: 550px;

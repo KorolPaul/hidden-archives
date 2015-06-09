@@ -25,7 +25,7 @@
 body {
     background: $default_background;
     color: $default_color;
-    font: $default_font-size $default_font-family;
+    font: #{$default_font-size}/28px $default_font-family;
     min-width: 1024px;
 }
 .gold {
