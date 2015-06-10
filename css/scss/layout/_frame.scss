@@ -1,10 +1,11 @@
 ﻿.frame {
-    clip: rect(40px, 0, 100px, 2px);
-    border: 1px solid $gold_color;
     position: absolute;
-    top: 45px;
-    left: 150px;
-    right: $side_padding;
-    height: 720px;
-    z-index: 2;
+    top: $frame_top;
+    left: $frame_left;
+    width: $frame_width;
+    height: $frame_height;
+
+    line {
+        stroke: $gold_color;
+    }
 }

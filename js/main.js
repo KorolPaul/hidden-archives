@@ -4,4 +4,10 @@ $(document).ready(function () {
         navigation: true,
         pagination: false
     });
+
+    $('.prizes-slider').owlCarousel({
+        items: 1,
+        navigation: true,
+        pagination: false
+    });
 });

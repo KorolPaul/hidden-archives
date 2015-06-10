@@ -23,18 +23,9 @@
     }
 }
 body {
-    background: $default_background;
+    background: $default_background url(../img/bg.jpg) no-repeat;
+    background-size: 100% auto; 
     color: $default_color;
     font: #{$default_font-size}/28px $default_font-family;
     min-width: 1024px;
-}
-.gold {
-    color: $gold_color;
-}
-.sign-in {
-    color: $gray_color;
-    float: right;
-    font-size: 13px;
-    text-decoration: none;
-    text-transform: uppercase;
 }

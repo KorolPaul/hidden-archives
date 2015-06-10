@@ -7,6 +7,7 @@
 @import "layout/normalize";
 @import "layout/layout";
 @import "layout/showcase";
+@import "layout/content";
 @import "layout/slider";
 @import "layout/main-photos";
 @import "layout/prize";
@@ -15,6 +16,19 @@
 @import "layout/carousel";
 @import "layout/headings";
 @import "layout/frame";
+@import "layout/notifications";
+@import "layout/gold";
+@import "layout/dashboard";
+@import "layout/stats";
+@import "layout/prizes-slider";
+
+/*Header*/
+@import "header/menu";
+@import "header/logo";
+
+/*Links*/
+@import "links/fb";
+@import "links/link";
 
 /*Form elements*/
 @import "form-elements/button";

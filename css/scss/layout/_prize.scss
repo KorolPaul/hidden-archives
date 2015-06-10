@@ -1,59 +1,87 @@
 ﻿$prize-item_padding: 160px;
+$prize-item_padding__wide: 200px;
 $prize_border: 1px solid #212121;
 
 .prize {
     @extend %clearfix;
+    overflow: hidden;
     padding: 0 $side_padding;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 
+    &:before {
+        background: url(../img/flag-small.png) no-repeat;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        height: 865px;
+        z-index: -1;
+    }
+
+    &_title {
+        color: $heading_color;
+        font: 20px/54px $headings_font-family;
+        margin: 170px 0 30px;
+        text-transform: uppercase;
+    }
     &_main {
+        color: $heading_color;
         font: 48px $headings_font-family;
+        margin: 30px 0;
         text-transform: uppercase;
     }
     &_model {
         color: $gold_color;
         display: block;
     }
-
     &_image {
         position: absolute;
         top: -50px;
         right: -20px;
         z-index: -1;
     }
+    &_items {
+        margin: 200px 0 0;
+    }
     &_item {
+        @include border-box;
         float: left;
-        padding: 0 0 0 0;
-        width: 40%;
+        padding: 50px 0;
+        width: 50%;
 
         &__premium {
-            background: url(../img/prizes/premium.png) no-repeat;
+            background: url(../img/prizes/premium.png) no-repeat 0 center;
             border-bottom: $prize_border;
             border-right: $prize_border;
-            padding-left: $prize-item_padding;
+            padding-left: $prize-item_padding__wide;;
         }
         &__gold {
-            background: url(../img/prizes/gold.png) no-repeat;
-            padding-left: $prize-item_padding;
+            background: url(../img/prizes/gold.png) no-repeat 4% center;
+            padding-left: $prize-item_padding__wide;;
             border-bottom: $prize_border;
         }
         &__gold-premium {
-            background: url(../img/prizes/gold-and-premium.png) no-repeat 100% 0;
-            padding-right: $prize-item_padding;
+            background: url(../img/prizes/gold-and-premium.png) no-repeat 95% center;
+            padding-right: $prize-item_padding__wide;
             border-right: $prize_border;
+            text-align: right;
         }
         &__premium-light {
-            background: url(../img/prizes/premium.png) no-repeat 100% 0;
-            padding-right: $prize-item_padding;
+            background: url(../img/prizes/premium.png) no-repeat 95% center;
+            text-align: right;
+            padding-right: $prize-item_padding__wide;
         }
     }
-    &_title {
+    &_item-title {
         font: 28px $headings_font-family;
+        margin: 0 0 10px;
         text-transform: uppercase;
     }
-    &_description {
+    &_item-description {
         font: lighter italic $default_font-size $default_font-family; 
+        margin: 0;
         opacity: .5;
     }
 }

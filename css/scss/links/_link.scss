@@ -1,0 +1,17 @@
+﻿.link {
+    color: #808080;
+    font-style: italic;
+    padding: 0 10px 0 0;
+    position: relative;
+    transition: .2s ease color;
+
+    &:hover {
+        color: #fff;
+    }
+    &:after {
+        content: '\00BB';
+        position: absolute;
+        right: 0;
+        top: -1px;
+    }
+}

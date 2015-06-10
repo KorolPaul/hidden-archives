@@ -1,0 +1,44 @@
+﻿.fb {
+    background-image: url(../img/fb.png);
+    background-repeat: no-repeat;
+    transition: .3s background-color ease;
+
+    &__small {
+        @include invisible-text;
+        background-position: center center;
+        position: absolute;
+        top: 90px;
+        right: 1.2%;
+        border: 1px solid $gold_color;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+
+        &:hover {
+            background-color: $gold_color;
+            background-position: center -40px;
+        }
+        &:active {
+            background-corol: $gold_color__dark;
+        }
+    }
+
+    &__big {
+        background-position:  12px 10px; 
+        border: 1px solid #4e5f98;
+        color: #4e5f98;
+        font-size: 13px;
+        padding: 8px 20px 8px 35px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            background-position: 12px -40px;
+            color: #000;
+            background-color: #4e5f98;
+        }
+        &:active {
+            background-color: #44517b;
+        }
+    }
+}

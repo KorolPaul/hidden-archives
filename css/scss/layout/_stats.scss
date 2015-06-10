@@ -1,0 +1,15 @@
+﻿.stats {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin: 100px 0 0;
+    width: 100%;
+
+    &_value {
+        color: $gold_color;
+        font-size: 32px;
+        font-style: normal;
+        display: block;
+        margin: 0 0 5px;
+    }
+}

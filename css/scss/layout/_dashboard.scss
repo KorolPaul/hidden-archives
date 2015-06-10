@@ -1,0 +1,21 @@
+﻿.dashboard {
+    @include display-flex;
+    flex-wrap: wrap;
+    margin: $frame_top 0 0 $frame_left;
+    width: $frame_width;
+    height: $frame_height;
+    position: relative;
+
+    &_item {
+        @include border-box;
+        padding: 40px $content_padding-left;
+        height: 50%;
+        width: 50%; 
+        position: relative;
+
+        &:nth-child(2), 
+        &:nth-child(3) {
+            background: rgba(255, 255, 255, .05);
+        }
+    }
+}

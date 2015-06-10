@@ -1,0 +1,34 @@
+﻿.prizes-slider {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 5px;
+    right: 5px;
+    bottom: 0;
+
+    &_item {
+        list-style: none;
+        padding: 0 6.1%;
+    }
+    &_title {
+        color: $heading_color;
+        font: 32px/38px $headings_font-family;
+        margin: 170px 0 30px;
+        text-transform: uppercase;
+    }
+    &_model {
+        color: $gold_color;
+        display: block;
+    }
+    &_description {
+        font: lighter italic $default_font-size $default_font-family; 
+        margin: 0;
+    }
+    &_image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-height: 100%;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,20 @@
+﻿.content {
+    min-height: 635px;
+    padding: 120px $side_padding + $content_padding-right 10px $frame_left + $content_padding-left;
+    position: relative;
+
+    &_left {
+        float: left;
+        width: 50%;
+    }
+    &_right {
+        float: right;
+        width: 35%;
+    }
+    p {
+        margin: 0 0 25px;
+    }
+    &_aside {
+        font-style: italic;
+    }
+}

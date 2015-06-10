@@ -9,9 +9,11 @@
     text-transform: uppercase;
     transition: .2s ease all;
 
-    &:hover, 
-    &:active {
+    &:hover {
         background: $gold_color;
         color: #fff;
+    }
+    &:active {
+        background: $gold_color__dark;
     }
 }

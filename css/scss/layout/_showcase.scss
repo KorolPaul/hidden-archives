@@ -1,6 +1,7 @@
 ﻿.showcase {
     background: url(../img/main-bg.jpg) no-repeat;
     background-size: 100% auto;
+    min-height: 750px;
     padding: 10px $side_padding 200px;
     position: relative;
     z-index: 2;
@@ -16,19 +17,16 @@
         height: 1500px;
         z-index: -1;
     }
+    &_logo {
+        position: absolute;
+        left: 1.95%;
+        top: 43px;
+    }
     &_description {
         color: #fff;
-        width: 550px;
-    }
-    &_fb {
-        @include invisible-text;
-        background: url(../img/fb.png) no-repeat center center;
         position: absolute;
-        top: 90px;
-        right: 30px;
-        border: 1px solid $gold_color;
-        border-radius: 50%;
-        height: 36px;
-        width: 36px;
+        top: 220px;
+        left: 3.6%;
+        width: 550px;
     }
 }

@@ -10,15 +10,31 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </head>
-<body>
-    <div class="frame"></div>
+<body class="main">
+    <header>
+        <nav class="menu menu__main">
+            <a class="menu_link" href="#">sign in</a>
+        </nav>
+    </header>
     <div class="showcase">
-        <a class="sign-in" href="#">sign in</a>
+        <svg class="frame" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 1078 723" enable-background="new 0 0 1078 723" xml:space="preserve" preserveAspectRatio="none">
+            <line stroke-miterlimit="10" x1="1077.9" y1="98" x2="1077.9" y2="723" />
+            <line stroke-miterlimit="10" x1="1077.9" y1="723" x2="0.1" y2="723" />
+            <line stroke-miterlimit="10" x1="0.1" y1="723" x2="0.1" y2="558.7" />
+            <line stroke-miterlimit="10" x1="0.1" y1="193.3" x2="0.1" y2="142" />
+            <line stroke-miterlimit="10" x1="0" y1="36.7" x2="0" y2="0" />
+            <line stroke-miterlimit="10" x1="0" y1="0" x2="1077.9" y2="0" />
+            <line stroke-miterlimit="10" x1="1077.9" y1="0" x2="1077.9" y2="36" />
+        </svg>
+
         <img class="showcase_logo" src="img/logo.png" alt="wot hidden archives" />
-        <a class="showcase_fb" href="#">facebook login</a>
-        <h1 class="heading-1">be an expert <br /> in <span class="gold">tanks!</span></h1>
-        <p class="showcase_description">Take part in an historic research opportunity — identifying armored vehicles on over a million never before seen photographs from the years .</p>
-        <a class="button" href="#">play game</a>
+        <a class="fb fb__small fb__main" href="#">facebook login</a>
+        <div class="showcase_description">
+            <h1 class="heading-1">be an expert <br /> in <span class="gold">tanks!</span></h1>
+            <p>Take part in an historic research opportunity — identifying armored vehicles on over a million never before seen photographs from the years .</p>
+            <a class="button" href="#">play game</a>
+        </div>
     </div>
     <ul class="slider">
         <li class="slider_item">
@@ -71,7 +87,7 @@
 
     </div>
     <div class="prize">
-        <h3 class="heading-3">win great <span class="gold">prizes</span></h3>
+        <h3 class="prize_title">win great <span class="gold">prizes</span></h3>
         <h4 class="prize_main">
             Powerful & quick <span class="prize_model">t-34-85-m</span>
         </h4>
@@ -79,27 +95,29 @@
             for top 10 players in the game
         </p>
         <img class="prize_image" src="img/t-34-85-m.png" alt="" />
-        <div class="prize_item prize_item__premium">
-            <p class="prize_title">30 days of <span class="gold">premium</span></p>
-            <p class="prize_description">for the 11-20 players</p>
-        </div>
-        <div class="prize_item prize_item__gold">
-            <p class="prize_title">1250  <span class="gold">gold</span></p>
-            <p class="prize_description">for the 11-20 players</p>
-        </div>
-        <div class="prize_item prize_item__gold-premium">
-            <p class="prize_title">1250 <span class="gold">gold</span> 7 days of <span class="gold">premium</span></p>
-            <p class="prize_description">for the 11-20 players</p>
-        </div>
-        <div class="prize_item prize_item__premium-light">
-            <p class="prize_title">7 days of <span class="gold">premium</span></p>
-            <p class="prize_description">for the 11-20 players</p>
+        <div class="prize_items">
+            <div class="prize_item prize_item__premium">
+                <p class="prize_item-title">30 days of <span class="gold">premium</span></p>
+                <p class="prize_item-description">for the 11-20 players</p>
+            </div>
+            <div class="prize_item prize_item__gold">
+                <p class="prize_item-title">1250  <span class="gold">gold</span></p>
+                <p class="prize_item-description">for the 11-20 players</p>
+            </div>
+            <div class="prize_item prize_item__gold-premium">
+                <p class="prize_item-title">1250 <span class="gold">gold</span> 7 days of <span class="gold">premium</span></p>
+                <p class="prize_item-description">for the 11-20 players</p>
+            </div>
+            <div class="prize_item prize_item__premium-light">
+                <p class="prize_item-title">7 days of <span class="gold">premium</span></p>
+                <p class="prize_item-description">for the 11-20 players</p>
+            </div>
         </div>
     </div>
     <div class="start">
         <a class="button" href="#">play game</a>
         <p class="start_message">And don’t forget to invite your friends!</p>
-        <a class="start_fb" href="#">facebook</a>
+        <a class="fb fb__big" href="#">facebook</a>
     </div>
     <footer>
         <p class="copyright">© Wargaming Bossignol Museum, 2015</p>

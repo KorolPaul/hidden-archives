@@ -1,0 +1,24 @@
+﻿.notifications {
+    position: absolute;
+    top: 10px;
+    right: 1.3%;
+
+    &_icon {
+        @include invisible-text;
+        display: inline-block;
+        background: url(../img/bell.png) no-repeat center 7px;
+        border: 1px solid $gold_color;
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        transition: .3s background-color ease;
+
+        &:hover {
+            background-color: $gold_color;
+            background-position: center -20px;
+        }
+        &:active {
+            background-corol: $gold_color__dark;
+        }
+    }
+}
