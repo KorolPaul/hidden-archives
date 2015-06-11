@@ -1,20 +1,37 @@
-﻿.content {
+﻿$content_padding-top: 120px;
+$content_padding-bottom: 10px;
+
+.content {
     min-height: 635px;
-    padding: 120px $side_padding + $content_padding-right 10px $frame_left + $content_padding-left;
+    padding: $content_padding-top $side_padding + $content_padding-right $content_padding-bottom $frame_left + $content_padding-left;
     position: relative;
 
     &_left {
         float: left;
-        width: 50%;
+        width: $content-left_width;
     }
     &_right {
         float: right;
-        width: 35%;
+        position: relative;
+        height: $frame_height - $content_padding-top;
+        width: $content-right_width;
     }
-    p {
-        margin: 0 0 25px;
-    }
+    
     &_aside {
         font-style: italic;
+    }
+    &_game-image {
+        @include invisible-text;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto;
+        height: $frame_height - $content_padding-top - $content_padding-bottom;
+        width: 150%;
+        position: relative;
+        right: 30%;
+        top: 10px;
+    }
+    p:not([class]) {
+        margin: 0 0 25px;
     }
 }

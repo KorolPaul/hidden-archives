@@ -14,4 +14,15 @@
         right: 0;
         top: -1px;
     }
+    &__main {
+        color: $gold_color;
+        &:hover {
+            color: $gold_color__hover;
+        }
+    }
+    &__skip {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }

@@ -1,0 +1,26 @@
+﻿.popup {
+    background: rgba(42, 42, 42, .95);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 10;
+    
+    &_content {
+        margin: auto;
+        width: 550px;
+    }
+    &_close {
+        color: $gold_color;
+        font-size: 30px;
+        position: absolute;
+        top: 60px;
+        right: 85px;
+        text-decoration: none;
+    }
+    p:not([class]) {
+        margin: 0 0 40px;
+    }
+}

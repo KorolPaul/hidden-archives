@@ -1,0 +1,16 @@
+﻿.flag {
+    background: url(../img/flags/sprite.jpg) no-repeat;
+    display: inline-block;
+    height: 11px;
+    width: 14px;
+    margin: 0 5px;
+    vertical-align: 1px;
+
+    $nations: 'ussr', 'uk','usa', 'chech', 'germany', 'spain', 'france', 'poland', 'turkey', 'portugal', 'japan', 'holland', 'china', 'korea', 'brazil', 'argentina';
+    @each $i in $nations {
+        &__#{$i} {
+            background-position: 0 -11px * (index($nations, $i) - 1);
+        }
+    }
+
+}

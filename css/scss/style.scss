@@ -21,6 +21,10 @@
 @import "layout/dashboard";
 @import "layout/stats";
 @import "layout/prizes-slider";
+@import "layout/flag";
+@import "layout/game-form";
+@import "layout/question";
+@import "layout/popup";
 
 /*Header*/
 @import "header/menu";
@@ -32,3 +36,4 @@
 
 /*Form elements*/
 @import "form-elements/button";
+@import "form-elements/choose-button";

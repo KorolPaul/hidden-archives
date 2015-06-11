@@ -2,7 +2,6 @@
     font-size: 12px;
     font-style: italic;
     text-align: center;
-    margin: 100px 0 0;
     width: 100%;
 
     &_value {
@@ -11,5 +10,31 @@
         font-style: normal;
         display: block;
         margin: 0 0 5px;
+    }
+    &__indent {
+        margin: 100px 0 0;
+    }
+    &__left {
+        text-align: left;
+    }
+    td {
+        width: 25%;
+    }
+    &__full {   
+        position: relative;
+        right: 95px;
+        text-align: left;
+        vertical-align: top;
+        width: 645px;
+
+        td {
+            padding: 0 30px 40px 0;
+            width: 65px;
+        }
+        td + td {
+            font-size: $default_font-size;
+            font-style: normal;
+            width: auto;
+        }
     }
 }

@@ -1,0 +1,51 @@
+﻿.game-form {
+    margin: 55px 0;
+
+    &_heading {
+        color: $heading_color;
+        font: 20px $headings_font-family;
+        text-transform: uppercase;
+    }
+    &_model {
+        color: #fff;
+        font-size: 12px;
+        font-family: $headings_font-family;
+        margin: 30px 0 0;
+        text-transform: uppercase;
+    }
+    &_process {
+        color: #fff;
+        font-style: italic;
+        margin: 15px 0 0;
+        padding: 0 0 0 25px;
+        position: relative;
+    }
+    &_process-icon {
+        @include invisible-text;
+        @include animation(process 1s infinite linear);
+        background: url(../img/process.png) no-repeat;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        height: 18px;
+        width: 18px;
+    }
+    &_error {
+        background: url(../img/wrong.png) no-repeat 0 center;
+        padding: 0 0 0 20px;
+        color: $red_color;
+        font-style: italic;
+    }
+}
+@include keyframes(process) {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
