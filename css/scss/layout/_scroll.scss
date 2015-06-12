@@ -1,0 +1,43 @@
+﻿.scroll {
+    position : relative;
+    height: 590px;
+    width: 100%;
+    overflow : hidden;
+
+    &_content {
+        position: absolute;
+        overflow: scroll;
+        overflow-x: hidden;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        &:focus {
+            outline: thin dotted;
+        }
+        &::-webkit-scrollbar {
+          display: none;
+
+          .has-scrollbar & {
+              display: block;
+            }
+        }
+    }
+    .nano-pane {
+        background: rgba(205, 164, 74, .2);
+        position: absolute;
+        width: 10px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+        transition: .2s;
+
+        .nano-slider {
+            background: $gold_color__hover;
+            position: relative;
+            margin: 0 1px;
+        }
+    }
+}

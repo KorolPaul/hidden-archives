@@ -23,7 +23,7 @@
     }
 }
 body {
-    background: $default_background url(../img/bg.jpg) no-repeat;
+    background: $default_background url(./images/bg.jpg) no-repeat;
     background-size: 100% auto; 
     color: $default_color;
     font: #{$default_font-size}/28px $default_font-family;

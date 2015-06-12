@@ -23,18 +23,12 @@
     &_process-icon {
         @include invisible-text;
         @include animation(process 1s infinite linear);
-        background: url(../img/process.png) no-repeat;
+        background: url(./images/process.png) no-repeat;
         position: absolute;
         left: 0;
         top: 5px;
         height: 18px;
         width: 18px;
-    }
-    &_error {
-        background: url(../img/wrong.png) no-repeat 0 center;
-        padding: 0 0 0 20px;
-        color: $red_color;
-        font-style: italic;
     }
 }
 @include keyframes(process) {

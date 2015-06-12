@@ -21,14 +21,14 @@
         background-color: $gold_color__dark;
     }
     &__positive {
-        background: url(../img/positive.png) no-repeat 15px 20px;
+        background: url(./images/positive.png) no-repeat 15px 20px;
 
         &:active {
             background-position: 15px -14px;
         }
     }
     &__negative {
-        background: url(../img/negative.png) no-repeat 15px 20px;
+        background: url(./images/negative.png) no-repeat 15px 20px;
          &:active {
             background-position: 15px -13px;
         }

@@ -19,12 +19,10 @@
 @import "layout/notifications";
 @import "layout/gold";
 @import "layout/dashboard";
-@import "layout/stats";
 @import "layout/prizes-slider";
-@import "layout/flag";
-@import "layout/game-form";
-@import "layout/question";
 @import "layout/popup";
+@import "layout/scroll";
+
 
 /*Header*/
 @import "header/menu";
@@ -37,3 +35,11 @@
 /*Form elements*/
 @import "form-elements/button";
 @import "form-elements/choose-button";
+
+/*Games*/
+@import "game/game-form";
+@import "game/stats";
+@import "game/flag";
+@import "game/question";
+@import "game/answeir";
+@import "game/nation";

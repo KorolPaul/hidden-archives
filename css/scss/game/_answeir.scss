@@ -1,0 +1,26 @@
+﻿.answeir {
+    color: #fff;
+    font-size: 12px;
+    font-family: $headings_font-family;
+    letter-spacing: .1em;
+    margin: 0 10px 0 0;
+    text-transform: uppercase;
+
+    &__wrong {
+        text-decoration: line-through;
+    }
+}
+.answeir-result {
+    padding: 0 0 0 20px;
+    font-style: italic;
+
+    &__right {
+        color: #fff;
+        background: url(./images/positive.png) no-repeat 0 8px;
+    }
+    &__wrong {
+        color: $red_color;
+        background: url(./images/wrong.png) no-repeat 0 center;
+        
+    }
+}

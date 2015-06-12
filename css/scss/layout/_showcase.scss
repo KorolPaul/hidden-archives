@@ -1,5 +1,5 @@
 ﻿.showcase {
-    background: url(../img/main-bg.jpg) no-repeat;
+    background: url(./images/main-bg.jpg) no-repeat;
     background-size: 100% auto;
     min-height: 750px;
     padding: 10px $side_padding 200px;
@@ -7,7 +7,7 @@
     z-index: 2;
 
     &:after {
-        background: url(../img/flag.png) no-repeat;
+        background: url(./images/flag.png) no-repeat;
         background-size: 100% auto;
         content: '';
         position: absolute;

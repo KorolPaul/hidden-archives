@@ -1,10 +1,11 @@
 ﻿.flag {
-    background: url(../img/flags/sprite.jpg) no-repeat;
+    @include invisible-text;
+    background: url(./images/flags.jpg) no-repeat;
     display: inline-block;
     height: 11px;
     width: 14px;
-    margin: 0 5px;
-    vertical-align: 1px;
+    margin: 0 5px 3px;
+    vertical-align: middle;
 
     $nations: 'ussr', 'uk','usa', 'chech', 'germany', 'spain', 'france', 'poland', 'turkey', 'portugal', 'japan', 'holland', 'china', 'korea', 'brazil', 'argentina';
     @each $i in $nations {

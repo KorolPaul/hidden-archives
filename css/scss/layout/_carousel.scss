@@ -54,7 +54,7 @@
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url(../img/carousel/grabbing.png) 8 8, move;
+    cursor:url(./images/carousel/grabbing.png) 8 8, move;
 }
 
 /* fix */
@@ -82,7 +82,7 @@
 
 .owl-theme .owl-controls .owl-buttons div {
     @include invisible-text;
-    background-image: url(../img/carousel/carousel-navigation.png);
+    background-image: url(./images/carousel/carousel-navigation.png);
     position: absolute;
     top: 50%;
     margin: -19px 0 0;

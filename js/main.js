@@ -10,4 +10,9 @@ $(document).ready(function () {
         navigation: true,
         pagination: false
     });
+
+    $(".scroll").nanoScroller({
+
+        contentClass: 'scroll_content'
+    });
 });
