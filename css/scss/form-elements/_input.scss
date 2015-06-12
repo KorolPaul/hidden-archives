@@ -1,0 +1,30 @@
+﻿$input_color: #c6c6c6;
+
+input[type=text], 
+input[type=password] {
+    background: $input_background;
+    border: 1px solid #ababab;
+    color: $input_color;
+    font: 12px $headings_font-family;
+    padding: 6px 13px;
+    text-transform: uppercase;
+    transition: .2s ease border-color;
+
+    &:focus {
+        border-color: #fff;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+    &::-webkit-input-placeholder {
+        color: $input_color;
+    }
+    &::-moz-placeholder {
+        color: $input_color;
+    }
+    &:-ms-input-placeholder
+    {
+        color: $input_color;
+    }
+}

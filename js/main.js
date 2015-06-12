@@ -12,7 +12,8 @@ $(document).ready(function () {
     });
 
     $(".scroll").nanoScroller({
-
         contentClass: 'scroll_content'
     });
+
+    $("select").chosen({disable_search: true})
 });

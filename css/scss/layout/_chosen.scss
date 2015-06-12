@@ -1,0 +1,11 @@
+﻿.frame {
+    position: absolute;
+    top: $frame_top;
+    left: $frame_left;
+    width: $frame_width;
+    height: $frame_height;
+
+    line {
+        stroke: $gold_color;
+    }
+}

@@ -8,7 +8,6 @@
 @import "layout/layout";
 @import "layout/showcase";
 @import "layout/content";
-@import "layout/slider";
 @import "layout/main-photos";
 @import "layout/prize";
 @import "layout/start";
@@ -21,8 +20,6 @@
 @import "layout/dashboard";
 @import "layout/prizes-slider";
 @import "layout/popup";
-@import "layout/scroll";
-
 
 /*Header*/
 @import "header/menu";
@@ -35,6 +32,8 @@
 /*Form elements*/
 @import "form-elements/button";
 @import "form-elements/choose-button";
+@import "form-elements/input";
+@import "form-elements/search";
 
 /*Games*/
 @import "game/game-form";
@@ -43,3 +42,11 @@
 @import "game/question";
 @import "game/answeir";
 @import "game/nation";
+@import "game/tanks";
+@import "game/search-form";
+@import "game/game-wrapper";
+
+/*Plugins*/
+@import "plugins/chosen";
+@import "plugins/slider";
+@import "plugins/scroll";
