@@ -10,8 +10,19 @@
     display: none;
     
     &_content {
+        height: 100%;
         margin: auto;
         width: 550px;
+
+        &__center {
+            @include display-flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 655px;   
+        }
+    }
+    &_form {
+        
     }
     &_close {
         color: $gold_color;
@@ -20,6 +31,7 @@
         top: 60px;
         right: 85px;
         text-decoration: none;
+        z-index: 1;
     }
     p:not([class]) {
         margin: 0 0 40px;

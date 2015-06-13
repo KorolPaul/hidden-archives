@@ -1,0 +1,15 @@
+﻿.progress {
+    &_counter {
+        font-size: 24px;
+        color: #fff;
+    }
+    &_bar {
+        background: #545454;
+        height: 2px;
+        margin: 20px 0 0;
+    }
+    &_value {
+        background: $gold_color;
+        height: 100%;
+    }
+}

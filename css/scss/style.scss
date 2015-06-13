@@ -15,7 +15,6 @@
 @import "layout/carousel";
 @import "layout/headings";
 @import "layout/frame";
-@import "layout/notifications";
 @import "layout/gold";
 @import "layout/dashboard";
 @import "layout/prizes-slider";
@@ -24,6 +23,7 @@
 /*Header*/
 @import "header/menu";
 @import "header/logo";
+@import "header/notifications";
 
 /*Links*/
 @import "links/fb";
@@ -34,6 +34,8 @@
 @import "form-elements/choose-button";
 @import "form-elements/input";
 @import "form-elements/search";
+@import "form-elements/textarea";
+@import "form-elements/label";
 
 /*Games*/
 @import "game/game-form";
@@ -45,6 +47,9 @@
 @import "game/tanks";
 @import "game/search-form";
 @import "game/game-wrapper";
+@import "game/tank-details";
+@import "game/epoch";
+@import "game/progress";
 
 /*Plugins*/
 @import "plugins/chosen";

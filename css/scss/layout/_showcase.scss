@@ -29,4 +29,16 @@
         left: 3.6%;
         width: 550px;
     }
+    &__minigame {
+        background: url(./images/flag.png) no-repeat 0 190px;
+        background-size: 100% auto;
+        min-height: 570px;
+
+        &:after {
+            content: none;
+        }
+    }
+    &__minigame-finish {
+        background-position: 0 -100px;
+    }
 }

@@ -20,6 +20,13 @@
             color: $gold_color__hover;
         }
     }
+    &__simple {
+        text-decoration: none;
+
+        &:after {
+            content: none;    
+        }
+    }
     &__skip {
         position: absolute;
         bottom: 0;

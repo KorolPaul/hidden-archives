@@ -1,12 +1,16 @@
-﻿input[type=text], 
-input[type=password] {
-    background: $input_background;
+﻿textarea {
+    @include border-box;
+    background: transparent;
     border: 1px solid $input_border-color;
     color: $input_color;
     font: 12px $headings_font-family;
+    min-height: 100px;
+    overflow: auto;
     padding: 6px 13px;
     text-transform: uppercase;
+    resize: none;
     transition: .2s ease border-color;
+    width: 100%;
 
     &:focus {
         border-color: #fff;
