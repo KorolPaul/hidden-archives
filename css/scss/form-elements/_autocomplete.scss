@@ -1,0 +1,29 @@
+﻿.autocomplete-wrapper {
+    display: inline;
+    margin: 0 0 0 10px;
+    position: relative;
+}
+.autocomplete {
+    background: $input_background;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 13px;
+    z-index: 2;
+    display: none;
+
+    &_item {
+        color: #fff;
+        cursor: pointer;
+        font: 12px $headings_font-family;
+        list-style: none;
+        margin: 0;
+        padding: 10px 20px;
+        transition: .2s ease background;
+
+        &:hover {
+            background: #353535;
+        }
+    }
+}
