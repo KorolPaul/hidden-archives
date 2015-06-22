@@ -29,13 +29,29 @@
         z-index: -1;
     }
     &_image {
-        margin: 0 0 15px;
+        margin: 0 0 10px;
         width: 100%;
     }
     &_model {
         color: #fff;
         font: lighter italic 18px $default_font-family; 
         display: block;
-        padding: 0 0 0 35px;
+
+        &:before {
+            background: url(./images/nations.png) no-repeat;
+            content: '';
+            display: inline-block;
+            margin: 0 10px 0 0;
+            width: 21px;
+            height: 20px;
+            vertical-align: -2px;
+        }
+        
+        $nations: 'ussr', 'uk','usa', 'chech', 'germany', 'spain', 'france', 'poland', 'turkey', 'portugal', 'japan', 'holland', 'china', 'korea', 'brazil', 'argentina';
+        @each $i in $nations {
+            &__#{$i}:before {
+                background-position: 0 -20px * (index($nations, $i) - 1);
+            }
+        }
     }
 }

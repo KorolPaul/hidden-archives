@@ -1,8 +1,35 @@
-﻿.link {
+﻿%link-text-decoration {
+    &:before {
+        @include opacity(0);
+        content: "";
+        border-bottom: 0 solid;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        margin-top: 9px;
+        transition: .3s ease opacity;
+    }
+    &:hover {
+        &:before {
+            @include opacity(.8);
+            border-bottom-width: 1px; // IE8 hack
+        }
+    }
+    @include tablet {
+        &:before {
+            content: none;
+        }
+    }
+}
+
+.link {
+    @extend %link-text-decoration;
     color: #808080;
     font-style: italic;
     padding: 0 10px 0 0;
     position: relative;
+    text-decoration: none;
     transition: .2s ease color;
 
     &:hover {
@@ -23,7 +50,8 @@
     &__simple {
         text-decoration: none;
 
-        &:after {
+        &:after, 
+        &:before {
             content: none;    
         }
     }

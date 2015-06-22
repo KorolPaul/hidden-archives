@@ -2,7 +2,7 @@
 
 .slider {
     @extend %clearfix;
-    margin: 0 0 100px;
+    margin: 0 0 80px;
     min-height: 200px;
     padding: 0  $side_padding;
     position: relative;
@@ -15,14 +15,14 @@
     &_title {
         color: $gold_color;
         font-family: $headings_font-family;
-        margin: 0 0 18px $slider-text_left-indent;
+        margin: 0 0 18px;
         text-transform: uppercase;
     }
     &_main-word {
         color: #fff;
         display: block;
         font-size: 28px;
-        line-height: 31px;
+        line-height: 25px;
         text-transform: uppercase;
     }
     &_image {
@@ -31,7 +31,11 @@
     }
     &_text {
         color: #fff;
-        margin: 0 0 0 $slider-text_left-indent;
+        margin: 0;
         opacity: .3;
+        
+        .slider_image + .slider_title + & {
+            margin-left: $slider-text_left-indent;
+        }
     }
 }

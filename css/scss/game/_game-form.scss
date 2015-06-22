@@ -1,5 +1,7 @@
 ﻿.game-form {
-    margin: 55px 0;
+    @extend %clearfix;
+    height: 515px;
+    margin: 55px 0 0;
 
     &_heading {
         color: $heading_color;

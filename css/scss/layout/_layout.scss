@@ -24,8 +24,11 @@
 }
 body {
     background: $default_background url(./images/bg.jpg) no-repeat;
-    background-size: 100% auto; 
+    background-size: cover; 
     color: $default_color;
-    font: #{$default_font-size}/28px $default_font-family;
+    font: #{$default_font-size}/$default_line-height $default_font-family;
     min-width: 1024px;
+}
+.main {
+    background-size: 100% auto; 
 }

@@ -2,7 +2,7 @@
     background: url(./images/main-bg.jpg) no-repeat;
     background-size: 100% auto;
     min-height: 750px;
-    padding: 10px $side_padding 200px;
+    padding: 10px $side_padding 80px;
     position: relative;
     z-index: 2;
 
@@ -13,13 +13,14 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 75%;
+        top: 76%;
         height: 1500px;
         z-index: -1;
     }
     &_logo {
         position: absolute;
-        left: 1.95%;
+        left: 8.4%;
+        margin: 0 0 0 -120px;
         top: 43px;
     }
     &_description {
@@ -28,6 +29,11 @@
         top: 220px;
         left: 3.6%;
         width: 550px;
+
+        p {
+            font-style: italic;
+            margin: 0;
+        }
     }
     &__minigame {
         background: url(./images/flag.png) no-repeat 0 190px;

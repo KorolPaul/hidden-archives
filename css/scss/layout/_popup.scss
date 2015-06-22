@@ -12,6 +12,7 @@
     &_content {
         height: 100%;
         margin: auto;
+        padding: 70px 0 0;
         width: 550px;
 
         &__center {
@@ -28,10 +29,15 @@
         color: $gold_color;
         font-size: 30px;
         position: absolute;
-        top: 60px;
+        top: 85px;
         right: 85px;
         text-decoration: none;
         z-index: 1;
+        transition: .2s ease color;
+
+        &:hover {
+            color: #fff;
+        }
     }
     p:not([class]) {
         margin: 0 0 40px;

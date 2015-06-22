@@ -3,6 +3,12 @@
 @import "const";
 @import "templates";
 
+/*Plugins*/
+@import "plugins/chosen";
+@import "plugins/slider";
+@import "plugins/scroll";
+@import "plugins/carousel";
+
 /*Layout*/
 @import "layout/normalize";
 @import "layout/layout";
@@ -12,7 +18,6 @@
 @import "layout/prize";
 @import "layout/start";
 @import "layout/copyright";
-@import "layout/carousel";
 @import "layout/headings";
 @import "layout/frame";
 @import "layout/gold";
@@ -52,7 +57,3 @@
 @import "game/epoch";
 @import "game/progress";
 
-/*Plugins*/
-@import "plugins/chosen";
-@import "plugins/slider";
-@import "plugins/scroll";

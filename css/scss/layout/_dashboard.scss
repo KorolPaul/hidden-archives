@@ -17,5 +17,9 @@
         &:nth-child(3) {
             background: rgba(255, 255, 255, .05);
         }
+        &:nth-child(2n) {
+            padding-left: 4%;
+            padding-right: 4%;
+        }
     }
 }

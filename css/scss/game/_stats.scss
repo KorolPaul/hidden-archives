@@ -1,8 +1,8 @@
 ﻿.stats {
     font-size: 12px;
     font-style: italic;
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    width: 110%;
 
     &_value {
         color: $gold_color;
@@ -13,9 +13,6 @@
     }
     &__indent {
         margin: 100px 0 0;
-    }
-    &__left {
-        text-align: left;
     }
     td {
         width: 25%;
@@ -30,10 +27,14 @@
         td {
             padding: 0 30px 40px 0;
             width: 65px;
+            vertical-align: top;
+            line-height: normal;
         }
         td + td {
             font-size: $default_font-size;
+            line-height: $default_line-height;
             font-style: normal;
+            padding-top: 3px;
             width: auto;
         }
     }
