@@ -13,7 +13,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 76%;
+        top: 33vw;
         height: 1500px;
         z-index: -1;
     }
@@ -38,7 +38,7 @@
     &__minigame {
         background: url(./images/flag.png) no-repeat 0 190px;
         background-size: 100% auto;
-        min-height: 570px;
+        min-height: 675px;
 
         &:after {
             content: none;

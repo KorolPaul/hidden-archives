@@ -1,6 +1,8 @@
 ﻿.main-photos {
     padding: 0 $side_padding;
     position: relative;
+    max-width: $content_max-width;
+    margin: auto;
     z-index: 3;
 
     &_title {

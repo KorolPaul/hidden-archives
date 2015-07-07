@@ -5,7 +5,8 @@ $prize_border: 1px solid #212121;
 .prize {
     @extend %clearfix;
     overflow: hidden;
-    margin: 0 0 35px;
+    margin: 0 auto 35px;
+    max-width: $content_max-width;
     padding: 0 $side_padding;
     position: relative;
     z-index: 3;
@@ -52,34 +53,28 @@ $prize_border: 1px solid #212121;
     &_item {
         @include border-box;
         float: left;
-        padding: 50px 0;
+        padding: 50px 0 50px $prize-item_padding__wide;
         width: 50%;
 
         &__premium {
             background: url(./images/prizes/premium.png) no-repeat 5% 35%;
             border-bottom: $prize_border;
             border-right: $prize_border;
-            padding-left: $prize-item_padding__wide;
             min-height: 200px;
         }
         &__gold {
             background: url(./images/prizes/gold.png) no-repeat 4% center;
-            padding-left: $prize-item_padding__wide;
             border-bottom: $prize_border;
             min-height: 200px;
         }
         &__gold-premium {
-            background: url(./images/prizes/gold-and-premium.png) no-repeat 95% 62%;
-            padding-right: $prize-item_padding__wide;
+            background: url(./images/prizes/gold-and-premium.png) no-repeat 0.5% 62%;
             padding-top: 75px;
             border-right: $prize_border;
-            text-align: right;
             min-height: 175px;
         }
         &__premium-light {
-            background: url(./images/prizes/premium.png) no-repeat 95% 68%;
-            text-align: right;
-            padding-right: $prize-item_padding__wide;
+            background: url(./images/prizes/premium.png) no-repeat 4% 68%;
             padding-top: 75px;
             min-height: 175px;
         }

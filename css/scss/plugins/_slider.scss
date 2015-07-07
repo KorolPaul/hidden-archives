@@ -4,6 +4,8 @@
     @extend %clearfix;
     margin: 0 0 80px;
     min-height: 200px;
+    max-width: $content_max-width;
+    margin: auto;
     padding: 0  $side_padding;
     position: relative;
     z-index: 3;

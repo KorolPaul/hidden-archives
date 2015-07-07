@@ -1,7 +1,8 @@
 ﻿.start {
-    margin: 0 0 70px;
+    margin: 0 auto 70px;
     position: relative;
     text-align: center;
+    max-width: $content_max-width;
     z-index: 1;
 
     &_message {
